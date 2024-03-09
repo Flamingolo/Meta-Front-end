@@ -8,6 +8,18 @@ body {
     margin: 3rem 5%;
 }
 
+#promotional img{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: black;
+    border-style: double;
+    border-width: 2px;
+
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -15,6 +27,10 @@ nav ul {
     align-items: center;
     padding-left: 0;
     padding-right: 0;
+    border: 2px black;
+    border-style: double;
+    border-radius: 22px;
+    background-color: #F9F871;
 }
 
 li a{
@@ -22,6 +38,7 @@ li a{
     font-weight: bold;
     text-decoration: none;
     font-size: larger;
+    background-color: #F9F871;
 }
 
 h1, h2 {
@@ -45,8 +62,9 @@ p{
 }
 
 #promotional{
-    border: black;
-    border-style: double;
+    display: block;
+    margin: auto;
+    background-color: #70D7C6;
 }
 
 #products{
@@ -56,6 +74,12 @@ p{
 .product{
     margin-right: auto;
     margin-left: auto;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    display: block;
+    background-color: #F9F871;
+
 }
 
 header img, footer img {
@@ -78,4 +102,22 @@ footer div{
 footer img {
     width: 200px;
     height: auto; 
+}
+
+#copyright{
+    position: relative;
+}
+
+#copyright p{
+    text-align: end;
+}
+
+#copyright::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-top: 2px double black;
 }
