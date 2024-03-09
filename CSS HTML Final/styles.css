@@ -14,7 +14,7 @@ nav ul {
     justify-content: space-evenly;
     align-items: center;
     padding-left: 0;
-    padding-right: auto;
+    padding-right: 0;
 }
 
 li a{
@@ -44,12 +44,17 @@ p{
     text-align: center;
 }
 
+#promotional{
+    border: black;
+    border-style: double;
+}
+
 #products{
     display: flex;
 }
 
 .product{
-    margin-right: 2rem;
+    margin-right: auto;
     margin-left: auto;
 }
 
