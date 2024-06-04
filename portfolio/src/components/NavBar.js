@@ -67,7 +67,7 @@ export const NavBar = () => {
                 <a href='#github'><img src={githubLogo} alt='Link to my Github account'/></a>
                 <a href='#linkedin'><img src={linkedInLogo} alt='Link to my LinkedIn account'/></a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className='vvd' onClick={() => console.log('connect')}><span>Contact Me</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
