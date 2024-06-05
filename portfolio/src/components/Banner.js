@@ -47,7 +47,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi, I'm an aspiring `}<span className="wrap">{text}</span></h1>
-                        <p>Add about me</p>
+                        <p>Hello! I am Ingo Hark, a passionate Web Developer currently honing my skills in full stack development at kood/Johvi. My studies are focused on both frontend and backend technologies, with emphasis on JavaScript and Golang.</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

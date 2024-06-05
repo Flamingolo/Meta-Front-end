@@ -2,11 +2,21 @@ import projImg1 from "../assets/logos/UFO-hunter-title.png";
 import projImg2 from "../assets/logos/Groupie-Tracker-title.png";
 import projImg3 from "../assets/logos/Forum-title.png";
 import projImg4 from "../assets/logos/HTMLCSS-title.png"
-import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
+import { Col, Container, Row, Tab, Nav, Modal } from "react-bootstrap";
+import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from '../assets/logos/color-sharp2.png'
 
 export const Projects = () => {
+    const [show, setShow] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('')
+
+    const handleClose = () => setShow(false);
+    const handleShow = (imgUrl) => {
+        setSelectedImage(imgUrl);
+        setShow(true)
+    }
+
 
     const projects = [
         {
@@ -47,6 +57,10 @@ export const Projects = () => {
                                                 return (
                                                     <ProjectCard
                                                     key={index}
+                                                    title={project.title}
+                                                    description={project.description}
+                                                    imgUrl={project.imgUrl}
+                                                    onClick={() => handleShow(project.imgUrl)}
                                                     {...project}
                                                     />
                                                 )
@@ -60,6 +74,11 @@ export const Projects = () => {
                 </Row>
             </Container>
             <img className="background-image-right" src={colorSharp2} />
+            <Modal show={show} onHide={handleClose} centered size="lg">
+                <Modal.Body>
+                    <img src={selectedImage} alt="Project" style={{width: '100%'}} />
+                </Modal.Body>
+            </Modal>
         </section>
     )
 };
