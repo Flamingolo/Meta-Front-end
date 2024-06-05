@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #242424;
+  background: #24242485;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -341,7 +341,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.055);
 }
 .project h2 {
 	font-size: 45px;
