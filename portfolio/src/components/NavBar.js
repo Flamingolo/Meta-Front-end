@@ -38,7 +38,7 @@ export const NavBar = () => {
       <Container>
         <Navbar.Brand href="#home">
           <div className='logoPic'>
-            <img src={logo} alt='A personal logo made by Ingo Hark'/>
+            <img src={logo} alt='A personal logo made by Ingo Hark' id='brandLogo'/>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
