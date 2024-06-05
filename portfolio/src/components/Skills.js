@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -38,27 +39,27 @@ export const Skills = () => {
                             </h2>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="Web Development Skill" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="Algorithms Skill" />
                                     <h5>Algorithms</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
+                                    <img src={meter3} alt="Front End Development Skill" />
                                     <h5>Front End Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="Back End Developer Skill" />
                                     <h5>Back End Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="Golang Skill" />
                                     <h5>Golang</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="JavaScript Skill" />
                                     <h5>JavaScript</h5>
                                 </div>
                             </Carousel>

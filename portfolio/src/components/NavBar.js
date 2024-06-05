@@ -1,15 +1,12 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useEffect } from 'react'
 import logo from '../assets/logos/Flamingo.png'
 import githubLogo from '../assets/logos/github-logo.png'
 import linkedInLogo from '../assets/logos/linkedin-logo.png'
-import homeLogo from '../assets/logos/home-logo.png'
-import projectsLogo from '../assets/logos/projects-logo.png'
-import skillsLogo from '../assets/logos/skills-logo.png'
-
+import { HashLink } from 'react-router-hash-link';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -64,10 +61,14 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href='#github'><img src={githubLogo} alt='Link to my Github account'/></a>
-                <a href='#linkedin'><img src={linkedInLogo} alt='Link to my LinkedIn account'/></a>
+                <a href='https://github.com/Flamingolo' target='_blank' rel="noopener noreferrer">
+                  <img src={githubLogo} alt='Link to my Github account'/></a>
+                <a href='https://www.linkedin.com/in/ingo-hark/' target='_blank' rel='"noopener noreferrer"'>
+                  <img src={linkedInLogo} alt='Link to my LinkedIn account'/></a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Contact Me</span></button>
+            <HashLink to="#connect">
+            <button className='vvd'><span>Contact Me</span></button>
+            </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>

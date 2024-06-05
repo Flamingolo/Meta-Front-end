@@ -1,8 +1,9 @@
+import React from 'react';
 import projImg1 from "../assets/logos/UFO-hunter-title.png";
 import projImg2 from "../assets/logos/Groupie-Tracker-title.png";
 import projImg3 from "../assets/logos/Forum-title.png";
 import projImg4 from "../assets/logos/HTMLCSS-title.png"
-import { Col, Container, Row, Tab, Nav, Modal } from "react-bootstrap";
+import { Col, Container, Row, Tab, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from '../assets/logos/color-sharp2.png'
@@ -42,7 +43,7 @@ export const Projects = () => {
     ]
 
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
@@ -73,7 +74,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2} />
+            <img className="background-image-right" src={colorSharp2} alt='Background Image'/>
             <Modal show={show} onHide={handleClose} centered size="lg">
                 <Modal.Body>
                     <img src={selectedImage} alt="Project" style={{width: '100%'}} />
