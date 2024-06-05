@@ -4,12 +4,12 @@ import "react-multi-carousel/lib/styles.css";
 import meter1 from '../assets/logos/meter1.svg'
 import meter2 from '../assets/logos/meter2.svg'
 import meter3 from '../assets/logos/meter3.svg'
+import colorSharp from '../assets/logos/color-sharp.png';
 
 
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -36,7 +36,6 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem Ipsum</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
@@ -67,6 +66,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-left" src={colorSharp} alt="styling" />
         </section>
       )
 }
